@@ -1,1 +1,121 @@
-"<!DOCTYPE html><html lang='en'><head><meta charset='utf-8' /></head><body>Ch�o c�c b?n, m�nh l� Th�y Duong</body></html>" 
+color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff608d;
+        }
+
+        form {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            font-size: 1.1em;
+            border: 1px solid #d46a8d;
+            border-radius: 20px;
+            width: 250px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff85a2;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #6c4f76;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        footer ul li a {
+            color: #ff85a2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer ul li a:hover {
+            color: #fbd3e2;
+        }
+
+        /* Chức năng chào */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Thao tác người dùng */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .personal-info {
+                padding-right: 0;
+                margin-top: 20px;
+            }
+
+            .avatar {
+                width: 120px;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="personal-info">
+            <h3>Chào các bạn, mình là Thùy Dương</h3>
+            <div class="greeting">
+                <!-- code java -->
+            </div>
+
+            <div>
+                <p>Sở thích của mình là:</p>
+                <ul>
+                    <li>🍔 Ăn</li>
+                    <li>💤 Ngủ</li>
+                    <li>💻 Code</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Các bạn có gì muốn hỏi mình không?</h3>
+                <form>
+                    <input type="text" placeholder="Điều câu hỏi" />
+                    <button type="submit">Gửi câu hỏi</button>
+                </form>
+            </div>
+        </div>
